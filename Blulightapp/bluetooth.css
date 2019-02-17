@@ -1,0 +1,39 @@
+#refreshButton{
+  position: absolute;
+  border: none;
+  background-color: rgb(0,210,255);
+  color: rgb(0,0,0);
+  font-size: 250%;
+  left: 10%;
+  top: 5%;
+}
+#statusDiv{
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 250%;
+  left: 10%;
+  top: 15%;
+}
+#deviceIDs{
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 250%;
+  left: 10%;
+  top: 25%;
+}
+#disconnect{
+  position: absolute;
+  border: none;
+  background-color: rgb(100,100,100);
+  color: rgb(255,255,255);
+  font-size: 250%;
+  left: 10%;
+  top: 80%;
+}
+#devicelist{
+  position: absolute;
+  background-color: rgb(0,210,255);
+  font-size: 250%;
+  left: 25%;
+  top: 25%;
+}

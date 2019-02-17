@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="height=device-height"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <script type="text/javascript" src="index.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="bluetooth.css">
+
+	<title=""> Blulight</title>
+    <div id="apptitle"> Blulight </div>
+
+
+
+  <!-- //main button -->
+   <button id="mainButton" onclick="mainButton()"> Welcome! </button>
+   <!-- background -->
+
+   <div id="buttonsBackground">
+   	 <!-- nav buttons -->
+      <button id="profiles" onclick="profiles()"> Profiles </button>
+      <button id="devices" onclick="devices()"> Devices </button>
+      <button id="liveEdit" onclick="liveEdit()"> LiveEdit </button>
+      <button id="routine" onclick="routine()"> Routine </button>
+      <button id="preset" onclick="preset()"> Preset</button>
+    </div>
+<div id="selectBackground">.</div>
+<!-- profileNav -->
+<div id="profileNav">
+	<h1 id="selectProfileH1">Select profile</h1>
+	<div id="profileMenu">
+  <a id="newProfile" href="#"> Profile 1 </a>
+	<a href="#"> Profile 2</a>
+</div>
+</div>
+<!-- deviceNav -->
+<div id="deviceNav"onload="onLoad()">
+	<ul id="deviceList"> </ul>
+	<button id="refreshButton" onClick ="refreshDeviceList()">Refresh</button>
+	<div id="statusDiv">Status: Disconnected</div>
+	<div id="deviceIDs">Devices:</div>
+  <button id="disconnect"onclick="disconnect()"> Disconnect</button>
+  <div id="debugDiv"></div>
+</div>
+<!-- liveEdit -->
+<div id="liveEditNav">
+  <h1 id="liveEditSlide"> Brightness</h1>
+  <div id="slidecontainer">
+    <input type="range" min="1" max="100" value="50" id="slider" id="myRange">
+  </div>
+</div>
+<div id="routineNav">
+<Button id="createRoutine">Create routine</button>
+<Button id="editRoutine">Edit routine</button>
+<h1 id="routineH1">Select routine</h1>
+</div>
+<div id="presetNav">
+<button id="createPreset">Create preset</button>
+<div id="presetSelector">
+<a href="#"> Profile 1 </a>
+<a href="#"> Profile 2 </a>
+</div>
+</div>
+
+</html>
